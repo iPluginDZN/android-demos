@@ -1,0 +1,88 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images"
+        app:layout_constraintBottom_toTopOf="@+id/btnLayout"
+        android:paddingTop="10dp"/>
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnwriteIS"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/buttonround"
+            android:text="write internal storage"
+            android:layout_width="match_parent"
+            app:backgroundTint="@null" />
+        <Button
+            android:id="@+id/btnreadIS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/buttonround"
+            android:text="read internal storage"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+             />
+        <Button
+            android:id="@+id/btnwriteFC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/buttonround"
+            android:text="write cache file"
+            app:backgroundTint="@null"
+             />
+        <Button
+            android:id="@+id/btnreadFC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="23dp"
+            android:background="@drawable/buttonround"
+            app:backgroundTint="@null"
+            android:text="read cache file"
+            />
+
+        <Button
+            android:id="@+id/btnwriteES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttonround"
+            android:text="write external storage"
+            app:backgroundTint="@null"
+            />
+        <Button
+            android:id="@+id/btnreadES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="read external storage"
+            android:background="@drawable/buttonround"
+            app:backgroundTint="@null"
+             />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
